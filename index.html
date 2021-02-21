@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB-8 Illustration</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script>
+      ' use strict'
+      window.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('uit').addEventListener('click', function () {
+          document.getElementById('bb8-body').style.animation = 'none'
+          document.getElementById('speedlines').style.animation = 'none'
+          document.getElementById('tekst').style.animation = 'none'
+          document.getElementById('bump').style.animation = 'none'
+          document.getElementById('bump1').style.animation = 'none'
+          document.getElementById('bump2').style.animation = 'none'
+          document.getElementById('bump3').style.animation = 'none'
+          document.getElementById('bump4').style.animation = 'none'
+        })
+        document.getElementById('aan').addEventListener('click', function () {
+          document.getElementById('bb8-body').style.animation = ''
+          document.getElementById('speedlines').style.animation = ''
+          document.getElementById('tekst').style.animation = ''
+          document.getElementById('bump').style.animation = ''
+          document.getElementById('bump1').style.animation = ''
+          document.getElementById('bump2').style.animation = ''
+          document.getElementById('bump3').style.animation = ''
+          document.getElementById('bump4').style.animation = ''
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="artboard">
+      <button id="aan">on</button>
+      <button id="uit">off</button>
+
+      <div class="bb8">
+        <div class="bb8-body" id="bb8-body">
+          <div class="dot dot-1">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+
+          <div class="dot dot-2"></div>
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+
+          <div class="body-shadow"></div>
+        </div>
+
+        <div class="bb8-head">
+          <div class="head-bottom">
+            <div class="head-side-1"></div>
+            <div class="head-side-2"></div>
+            <div class="head-bottom-base"></div>
+          </div>
+          <div class="head-top-crop">
+            <div class="head-top"></div>
+          </div>
+          <div class="lens"></div>
+          <div class="freckle"></div>
+        </div>
+
+        <div class="speedlines" id="speedlines">
+          <div class="one tail"></div>
+          <div class="two tail"></div>
+          <div class="three"></div>
+          <div class="four"></div>
+          <div class="five tail"></div>
+        </div>
+
+        <div class="ground">
+          <div class="groundOne">
+            <div class="bump" id="bump"></div>
+          </div>
+          <div class="groundTwo"></div>
+          <div class="groundThree"></div>
+          <div class="groundFour">
+            <div class="bump" id="bump1"></div>
+          </div>
+          <div class="groundFive">
+            <div class="bump" id="bump2"></div>
+          </div>
+          <div class="groundSix">
+            <div class="bump" id="bump3"></div>
+          </div>
+          <div class="groundSeven">
+            <div class="bump" id="bump4"></div>
+          </div>
+        </div>
+      </div>
+      <div id="tekst">Beep! Beep!</div>
+    </div>
+    <footer>
+        &copy; Martine Boulanger 2021
+    </footer>  
+</body>
+</html>
